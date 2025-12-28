@@ -7,6 +7,12 @@ const title = "Quick Setup"
 const description = "This is a quick guide to nuxt-loader's quick setup"
 const mdFile = "docs/quick-setup.md"
 
+useSeoMeta({
+    title: "Nuxt Loaders | Quick Setup",
+    description: description,
+})
+
+
 definePageMeta({
     layout: 'docs'
 })

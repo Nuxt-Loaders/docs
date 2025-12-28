@@ -8,6 +8,11 @@ const title = "CLI"
 const description = "This is a quick guide to nuxt-loader's cli commands"
 const mdFile = "docs/cli.md"
 
+useSeoMeta({
+    title: "Nuxt Loaders | CLI",
+    description: "This is a quick guide to nuxt-loader's cli commands",
+})
+
 definePageMeta({
     layout: 'docs'
 })
