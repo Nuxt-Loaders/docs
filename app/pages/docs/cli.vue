@@ -4,13 +4,17 @@
 </template>
 
 <script setup lang="ts">
+import { getMetas } from '~/lib/getMetas'
+
 const title = "CLI"
 const description = "This is a quick guide to nuxt-loader's cli commands"
 const mdFile = "docs/cli.md"
+const pageTitle = "Nuxt Loaders | CLI"
 
 useSeoMeta({
-    title: "Nuxt Loaders | CLI",
-    description: "This is a quick guide to nuxt-loader's cli commands",
+    title: pageTitle,
+    description: description,
+    ...getMetas(description, pageTitle)
 })
 
 definePageMeta({

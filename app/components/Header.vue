@@ -1,7 +1,9 @@
 <template>
     <div class="w-full max-w-[600px] mx-auto">
         <div class="header-content flex justify-between items-center w-full px-4 py-4 bg-[#1E293B] rounded-md">
-            <NuxtLink to="/">
+            <NuxtLink to="/" class="flex gap-2">
+                <NuxtImg src="/logo_small.png" alt="nuxt-loaders" class="w-[25px] h-[25px] object-contain" width="100"
+                    height="100" />
                 <h1>Nuxt Loaders</h1>
             </NuxtLink>
             <nav>

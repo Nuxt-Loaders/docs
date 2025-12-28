@@ -3,13 +3,17 @@
 </template>
 
 <script setup lang="ts">
+import { getMetas } from '~/lib/getMetas'
+
 const title = "Quick Setup"
 const description = "This is a quick guide to nuxt-loader's quick setup"
 const mdFile = "docs/quick-setup.md"
+const pageTitle = "Nuxt Loaders | Quick Setup"
 
 useSeoMeta({
-    title: "Nuxt Loaders | Quick Setup",
+    title: pageTitle,
     description: description,
+    ...getMetas(description, pageTitle)
 })
 
 

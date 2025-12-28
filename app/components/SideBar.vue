@@ -3,6 +3,9 @@
         <div class="flex flex-col gap-8">
             <NuxtLink to="/"
                 class="bg-black/50 max-h-[200px] h-[150px] flex flex-col justify-center px-8 border-b-[1px] border-b-white/50">
+                <NuxtImg src="/logo_small.png" alt="nuxt-loaders"
+                    class="w-[25px] h-[25px] object-contain animate-spin after:content-[' '] after:absolute relative after:w-[25px] after:h-[25px] after:top-0 after:left-0 after:bg-blue-400 after:blur-3xl"
+                    width="100" height="100" />
                 <h1 class="text-2xl font-bold">Nuxt Loaders</h1>
             </NuxtLink>
             <div class="flex flex-col space-y-4 overflow-y-auto px-8">
