@@ -14,6 +14,6 @@ const props = defineProps<{
             {{ props.language.charAt(0).toUpperCase() + props.language.slice(1).toLowerCase() }}
         </div>
 
-        <pre><code><slot /></code></pre>
+        <pre><code class="overflow-x-auto w-full"><slot /></code></pre>
     </div>
 </template>

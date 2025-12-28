@@ -1,9 +1,9 @@
 <template>
-    <article class="prose dark:prose-invert max-w-[1000px]">
-        <MDCRenderer :body="parsedContent.body" tag="article" :cache-key="mdFile" :components="{
-        }" />
-    </article>
+    <article class="prose">
 
+        <MDCRenderer :body="parsedContent.body" tag="article" :cache-key="mdFile"
+            class="w-full overflow-hidden max-w-[1000px]" />
+    </article>
 </template>
 
 <script lang="ts">

@@ -7,6 +7,11 @@ body {
     color: #e2e8f0;
 }
 
+.prose {
+    width: 100% !important;
+    overflow-x: hidden;
+}
+
 .prose code {
     background-color: rgb(28, 29, 31);
     padding: 4px;
@@ -17,6 +22,8 @@ body {
     background-color: rgb(17, 17, 17);
     padding: 8px;
     border-radius: 8px;
+    width: 100% !important;
+    overflow-x: auto;
     margin: 8px 0px;
 }
 
@@ -48,20 +55,29 @@ body {
 }
 
 .prose table {
-        border: solid rgb(63, 63, 63) 1px;
-    background-color: rgb(5, 5, 5);
-    padding: 100px !important;
+    display: block;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    width: 100% !important;
 }
 .prose thead {
     background-color: rgb(50, 50, 50);
     border-bottom: solid rgb(63, 63, 63) 1px;
+    overflow-x: scroll !important;
+    width: 100% !important;
+    padding: 20px !important;
 }
 
 .prose tbody {
     background-color: rgb(5, 5, 5);
+    overflow-x: scroll !important;
+    width: 100% !important;
 }
 
+
 .prose tr {
+    width: 100% !important;
+    overflow-x: auto !important;
     border: 1px solid rgb(63, 63, 63);
 }
 
