@@ -9,6 +9,14 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  loaders: {
+    routeRules: {
+      "*": "PulseRailLoader",
+      "/docs/*": "TripleBarLoader",
+      "/docs/contributing": "TripleFlipLoader",
+      "/docs/quick-setup": "TriDotLoader",
+    },
+  },
   content: {
     build: {
       markdown: {
